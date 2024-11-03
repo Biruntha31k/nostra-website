@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra E-Commerce</title>
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Tailwind CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!--Font-Family-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--Fontawesome CDN Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!--popup-->
+    <div id="popup" class="popup">
+        <p>Sign Up & <span style="font-weight: bold;">Get 20% off</span> for your 1st Order</p>
+        <svg id="popup_close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+
+    </div>
+
+
+    <!--Navbar-->
+
+    <nav class="navbar">
+        <a class="navbar_a text-2xl" href="./index.html">Nostra</a>
+
+        <svg id="nav_menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="nav_list">
+            <li><a class="nav_link" href="./index.html">Home</a></li>
+            <li><a class="nav_link" href="#newarrival">New Arrivals</a></li>
+            <li><a class="nav_link" href="#mostwanted">Most Wanted</a></li>
+            <li><a class="nav_link" href="./collections.html">Collections</a></li>
+            <li><a class="nav_link" href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--Sidebar-->
+
+    <section class="sidebar" id="sidebar">
+        <div class="side_close">
+            <svg id="closebar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 flex">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+
+        <div class="side_list">
+            <p><a href="./index.html" class="hover:underline">Home</a></p>
+            <p><a href="#newarrival" class="hover:underline">New Arrival</a></p>
+            <p><a href="#mostwanted" class="hover:underline">Most Wanted</a></p>
+            <p><a href="./collections.html" class="hover:underline">Collections</a></p>
+            <p><a href="./contact.html" class="hover:underline">Contact Us</a></p>
+        </div>
+    </section>
+
+    <!-- Slider Container -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="./images/slider1.jpeg" alt="Slide 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="./images/slider2.jpeg" alt="Slide 2">
+
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="./images/slider3.jpeg" alt="Slide 3">
+            </div>
+
+        </div>
+
+        <div id="slider_content">
+            <h1>Level Up Your Style With Our</h1>
+            <h3>Summer Collections</h3>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+    <!--Brands-->
+
+    <h2 class="mt-16 font-bold text-2xl">Brands</h2>
+    <br>
+
+    <section id="Brands-Container" class="flex  items-center justify-between mt-[2vw] md:flex">
+
+        <div id="Brands-image" class="flex items-center flex-col size-[2vw]">
+            <img id="Brands-icon" class="w-[4vw] items-center" src="./images/brand5.png" alt="Aurelia">
+        </div>
+
+        <div id="Brands-image" class="flex items-center flex-col size-[2vw]">
+            <img id="Brands-icon" class="w-[4vw] items-center" src="./images/brand6.png" alt="Biba">
+        </div>
+
+        <div id="Brands-image" class="flex items-center flex-col size-[2vw]">
+            <img id="Brands-icon" class="w-[4vw] items-center" src="./images/brand3.png" alt="Burberry">
+        </div>
+
+        <div id="Brands-image" class="flex items-center flex-col size-[2vw]">
+            <img id="Brands-icon" class="w-[4vw] items-center" src="./images/brand7.png" alt="Lifestyle">
+        </div>
+
+        <div id="Brands-image" class="flex items-center flex-col size-[2vw]">
+            <img id="Brands-icon" class="w-[4vw] items-center" src="./images/brand1.png" alt="ZARA">
+        </div>
+
+    </section>
+
+    <!--Customer Experience-->
+
+    <section id="service">
+        <div id="header">
+            <div class="header-text">
+                <h2>We provide The Best</h2>
+                <h2>Customer Experience</h2>
+            </div>
+            <div class="header-subtext">
+                <p>|| We Ensure that our Customers have the best Shopping Experience</p>
+            </div>
+        </div>
+
+        <div id="service-items">
+            <div class="service-item">
+                <i class="icon">✔️</i>
+                <h4>Original Products</h4>
+                <p>The product quality is consistently outstanding, exceeding my expectations every time.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="icon">😊</i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>I was completely impressed with their professionalism and customer service.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="icon">🧹</i>
+                <h4>New Arrivals Every Day</h4>
+                <p>Discover a fresh selection of products added daily, keeping our inventory exciting.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="icon">🚚</i>
+                <h4>Fast & Free Shipping</h4>
+                <p>We deliver your orders quickly and for free, straight to your home or workplace.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--New Arrival-->
+
+
+    <section id="new-arrivals">
+        <h2 id="newarrival">New Arrivals</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="./images/img5.jpeg" alt="Product 1">
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+            <div class="product-item">
+                <img src="./images/img3.jpeg" alt="Product 2">
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+            <div class="product-item">
+                <img src="./images/img6.jpeg" alt="Product 3">
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+            <div class="product-item">
+                <img src="./images/img8.jpeg" alt="Product 4">
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Most Wanted-->
+
+    <section class="mostwanted">
+        <h2 id="mostwanted">Most Wanted</h2>
+
+        <div class="image-slider">
+            <div class="image-container">
+              <div class="image-item">
+                <div class="sale-label">Sale</div>
+                <img src="./images/img1.jpeg" alt="Image 1" class="product-image" />
+              </div>
+              <div class="image-item">
+                <div class="sale-label">Sale</div>
+                <img src="./images/img2.jpeg" alt="Image 2" class="product-image" />
+              </div>
+              <div class="image-item">
+                <div class="sale-label">Sale</div>
+                <img src="./images/img3.jpeg" alt="Image 3" class="product-image" />
+              </div>
+              <div class="image-item">
+                <div class="sale-label">Sale</div>
+                <img src="./images/img4.jpeg" alt="Image 4" class="product-image" />
+              </div>
+              <div class="image-item">
+                <div class="sale-label">Sale</div>
+                <img src="./images/img5.jpeg" alt="Image 5" class="product-image" />
+              </div>
+              <div class="image-item">
+                <div class="sale-label">Sale</div>
+                <img src="./images/img6.jpeg" alt="Image 6" class="product-image" />
+              </div>
+              <div class="image-item">
+                <div class="sale-label">Sale</div>
+                <img src="./images/img7.jpeg" alt="Image 7" class="product-image" />
+              </div>
+              <div class="image-item">
+                <div class="sale-label">Sale</div>
+                <img src="./images/img8.jpeg" alt="Image 8" class="product-image" />
+              </div>
+            </div>
+          </div>
+          
+
+    </section>
+
+    <!--Limited Offer-->
+
+    <div class="limited-offer">
+        <div class="limited-offer-img">
+            <img src="./images/slider3.jpeg" alt="">
+        </div>
+        <div class="limited-offer-text">
+            <h2>Limited Offer</h2>
+            <h4>35% OFF on this For the first 30 customers</h4>
+            <button>Shop Now</button>
+
+        </div>
+
+    </div>
+
+
+
+    <!--News Letter-->
+    <div class="news">
+        <h2>Join Our News Letter</h2>
+        <p style="text-align: center;">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div style="margin-top: 11px;">
+            <input class="search">
+
+        </div>
+        <div>
+            <button>Subscribe <i class="fa-solid fa-arrow-right" style="color: white; padding: 5px;"></i></button>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">Nostra</h2>
+                <p style="margin-bottom:10px;">Subscribe to stay up to date with all the latest news related to Nostra.
+                </p>
+                <div class="footer-icons">
+                    <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-facebook"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="subtitle">@ 2024 Nostra.com</p>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
